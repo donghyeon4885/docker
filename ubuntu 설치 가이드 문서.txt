@@ -1,0 +1,25 @@
+ubuntu 설치 가이드 문서
+1. 화면 사이즈 조정
+1280 *960
+2. 전원 사용안함으로 변경
+3. sudo password root 생성 (password : password)
+4. apt-get update
+5. apt-get install -y openssh-server url vim tree
+6. vi /etc/hostname 변경한다 (이름 : docker)
+7. 네트워크에 들어가서 IP 입력한다 (10.0.2.60)
+8. vi /etc/hosts IP 이름 변경
+
+
+apt-get install -y
+
+
+# 컨테이너는 하나의 어플리케이션 프로세스이다.
+# 도커 호스트 : 도커 데몬이 설치되서 동작되는 리눅스 커널이 있는 시스템
+# 컨테이너 이미지는 여러 개의 레이어로 구성된 이미지들의 조합
+
+docker create / docker run : create 명령어는 start를 해야지만이 파일이 보인다 run은 한번에 실행된다.
+
+
+
+docker search nginx 명령어 : 공신력 있는 파일은 offical, 나머지는 바이러스 있을수도 있다
+
